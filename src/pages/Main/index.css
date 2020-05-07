@@ -1,72 +1,149 @@
-.container{
-    display: flex;
-    flex: 1;
-    min-height: 100vh;
-    width: 100%;
-    background-color:#191919;
-    /* background-image: url(https://images.unsplash.com/photo-1529465230221-a0d10e46fcbb);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-clip: border-box; */
-}
-.content{
-    color: #f4f4f4;
-    width: 90%;
-    min-height: 85%;
-    margin: 3% auto;
-    background-color: #000000b3;
-    border-radius: 5px;
-    flex-direction: column;
-}
-header{
-    height: 20%;
-    max-height: 120px;
-    display: flex;
-    padding: 15px 35px;
-}
-header img {
-    height: 100%;
-}
-header h1{
-    position: relative;
-    top: 30%;
-    margin-left: 10%;
-}
-hr{
-    width: 95%;
-    margin: auto;
-    border-color: #f4f4f493;
-}
-
-table,tr{
-    border-collapse: collapse;
-    padding: 5px;
-    border: 1px solid #f4f4f493;
-}
-table{
-    border: 1px solid wheat;
-    width: 90%;
-    margin: 10px auto;
-}
-th,td{
-    width: calc(60% / 4);
-    text-align: center;
-    padding: 5px;
-}
-th{
-    font-size: larger;
-    padding: 10px;
-}
-th:nth-child(2){
-    width: 40%;
-}
-td:nth-child(2){
-    width: 40%;
-    text-align: left;
-    text-indent: 4%;
-}
+/* 
+#8a2be2 blueviolet
+#556b2f darkolivegreen
+#a0ebcf
+#014871
+ */
+ @import url('https://rodcordeiro.github.io/shares/fonts/sketch-gothic-school/font.css');
+ @import url('https://rodcordeiro.github.io/shares/fonts/Square721BT-Roman/font.css');
+ :root{
+     --cor: #556b2f;
+ }
+ *{
+     padding: 0;
+     margin: 0;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ body{
+     background-color: #181818;
+ }
+ .container{
+     display: flex;
+     flex:1;
+     flex-direction: column;
+ }
+ header{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-content: center;
+     height: 100px;
+     /* border:2px solid; */
+     width: 100%;
+     background-color: var(--cor);
+ }
+ header span {
+     font-family: 'Sketch Gothic School';
+     font-size: 400%;
+     line-height: 30pt;
+     align-self: center;
+     font-weight: lighter;
+ }
+ header img{
+     height: 90%;
+     width: auto;
+     padding: 5px;
+     
+ }
+ .content{
+     display: flex;
+     flex-direction: row;
+     min-height: calc(100vh - 100px);
+ }
+ .repositories{
+     width: 70%;
+     border: 0.5px solid;
+ }
+ .repositories h3{
+     /* color: #f4f4f4; */
+     color: whitesmoke;
+     padding: 25px 30px;
+     font-weight: lighter;
+     font-family: 'Courier New', sans-serif;
+ }
+ table{
+     width: 100%;
+ }
+ .repHeader{
+     font-family: 'Square721 BT';
+     width: 90%;
+     margin: -10px auto;
+     color: whitesmoke;
+     display: flex;
+     justify-content: space-around;
+     font-weight: lighter;
+     
+ }
+ .repository{
+     width: 90%;
+     background-color: #36363699;
+     margin: 10px auto;
+     padding: 10px;
+     color: whitesmoke;
+     display: flex;
+     justify-content: space-around;
+     border-left: 5px solid var(--cor);
+ }
+ .repository td,.repHeader th{
+     font-family: 'Courier New', Courier, monospace;
+     
+ }
+ .repository td:nth-child(1),.repHeader th:nth-child(1){
+     width: 60%;
+ }
+ .repHeader th:nth-child(2),.repHeader th:nth-child(3),.repHeader th:nth-child(4){
+     width: calc(50% / 3);
+     text-align: center;
+ }
+ .repHeader th:nth-child(2),.repHeader th:nth-child(3),.repHeader th:nth-child(4),.repository td:nth-child(2),.repository td:nth-child(3),.repository td:nth-child(4){
+     width: calc(40% / 3);
+     text-align: center;
+ }
+ 
+ .project{
+     width: 30%;
+ }
+ .project h1{
+     color:whitesmoke;
+     padding: 15px 20px;
+ }
+ .project blockquote{
+     width: 80%;
+     background-color: #36363699;
+     margin: 10px auto;
+     padding: 15px;
+     text-align: justify-all;
+     text-indent: 5px;
+     color: whitesmoke;
+     border-left: 5px solid var(--cor);
+     font-family: 'Courier New', Courier, monospace;
+ }
+ .projectLinks{
+     width: 80%;
+     margin: 10px auto;
+     color: whitesmoke;
+     padding: 5px;
+     display: flex;
+     flex-direction: column;
+ }
+ .projectLinks hr{
+    border-color: var(--cor);
+ }
+ .projectLinks .link{
+     margin: 10px auto;
+     color: whitesmoke;
+     padding: 5px;
+     width: 100%;
+ }
+ .projectLinks a{
+     color: var(--cor);
+     text-decoration: none;
+     border-bottom: 1px solid var(--cor);
+     padding: 5px;
+     line-height: 1.6;
+     background-color: #36363699;
+     
+ }
 
 @media  screen and (max-width: 768px) {
     .content{
