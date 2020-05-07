@@ -18,6 +18,14 @@ export default function MainPage(){
         })
     },[]);
     
+    function formatDate(date){
+        let data = new Date(date);
+        let month = data.getMonth() +1;
+        let day = data.getDate();
+        let year = data.getUTCFullYear();
+        let created = `${year}/${month}/${day}`
+        return created
+    }
     function formatBytes(bytes, decimals = 2) {
         if (bytes === 0) return '0 Bytes';
     
@@ -67,7 +75,7 @@ export default function MainPage(){
                                             return (
                                                 <tr className="repository" key={projeto.id}onClick={(e)=>handleProject(e,projeto)} >
                                                     <td className="name">{projeto.name}</td>
-                                                    <td className="data">{projeto.created_at}</td>
+                                                    <td className="data">{formatDate(projeto.created_at)}</td>
                                                     <td className="lang">{projeto.language || "¯\\_(ツ)_/¯"}</td>
                                                     <td className="size">{formatBytes(projeto.size)}</td>
                                                 </tr> 
