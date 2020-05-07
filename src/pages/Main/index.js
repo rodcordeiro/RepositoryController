@@ -10,7 +10,7 @@ export default function MainPage(){
         unirest
         .get(`https://api.github.com/user/repos?visibility=public`)
         .headers({
-            "authorization": 'token 337ac2bdcf6a3f3f89eae5e1a78f5a06d044772d',
+            "authorization": 'token 3c8963ab120352474989d5e3e805d001f1de2f42',
             "user-agent":`rodcordeiro`
           })
         .then((response) => {
