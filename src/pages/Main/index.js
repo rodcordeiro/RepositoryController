@@ -1,16 +1,15 @@
 import React, {useState, useEffect} from 'react';
-
 import unirest from 'unirest';
 
 import './index.css';
 
 export default function MainPage(){
     const [projetos, setProjetos] = useState([]);
-    useEffect(() => {
+    useEffect(() => {    
         unirest
         .get(`https://api.github.com/user/repos?visibility=public`)
         .headers({
-            "authorization": 'token 08cab93ff70ac6aa3f81832abef75a865451e6d6',
+            "authorization": process.env.REACT_APP_GITHUB_TOKEN,
             "user-agent":`rodcordeiro`
           })
         .then((response) => {
@@ -64,16 +63,16 @@ export default function MainPage(){
                         </thead>
                         <tbody>
                             {projetos.map(projeto=>{
-                                if(projeto.fork !== true){
-                                    return (
-                                        <tr className="repository" key={projeto.id}onClick={(e)=>handleProject(e,projeto)} >
-                                            <td className="name">{projeto.name}</td>
-                                            <td className="data">{projeto.created_at}</td>
-                                            <td className="lang">{projeto.language || "¯\\_(ツ)_/¯"}</td>
-                                            <td className="size">{formatBytes(projeto.size)}</td>
-                                        </tr> 
-                                    )}
-                            })}
+                                        if(projeto.fork !== true){
+                                            return (
+                                                <tr className="repository" key={projeto.id}onClick={(e)=>handleProject(e,projeto)} >
+                                                    <td className="name">{projeto.name}</td>
+                                                    <td className="data">{projeto.created_at}</td>
+                                                    <td className="lang">{projeto.language || "¯\\_(ツ)_/¯"}</td>
+                                                    <td className="size">{formatBytes(projeto.size)}</td>
+                                                </tr> 
+                                            )}
+                                    })}
                         </tbody>
                     </table>
                     
