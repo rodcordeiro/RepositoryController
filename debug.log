@@ -1,0 +1,43 @@
+[0512/114046.090:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[0512/114046.980:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[0512/114046.090:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[0512/114046.871:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[0512/114046.652:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0512/114046.871:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[0512/114046.465:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[0512/114047.621:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0512/114046.934:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[0512/114046.590:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[0512/114046.559:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[0512/114046.215:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[0512/114047.949:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0512/114046.215:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[0512/114046.090:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[0512/114047.949:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0512/114046.949:ERROR:process_info.cc(329)] VirtualQueryEx: Acesso negado. (0x5)
+[0512/114047.949:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0512/114047.949:ERROR:exception_snapshot_win.cc(98)] thread ID 6196 not found in process
+[0512/114047.949:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0512/114047.949:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0512/114047.949:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0512/114047.949:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0512/114047.949:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0512/114047.949:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0512/114047.949:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0512/114047.949:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0512/114047.949:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0512/114047.949:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0512/114047.949:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0512/114047.949:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0512/114047.949:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0512/114047.949:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0512/114047.949:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0512/114047.949:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0512/114047.949:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0512/114047.949:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0512/114047.949:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0512/114047.949:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0512/114047.949:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0512/114047.949:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0512/114047.949:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[0512/114047.949:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
