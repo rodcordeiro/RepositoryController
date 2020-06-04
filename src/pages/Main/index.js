@@ -5,7 +5,8 @@ import './index.css';
 
 export default function MainPage(){
     const [projetos, setProjetos] = useState([]);
-    useEffect(() => {    
+    useEffect(() => {
+
         unirest
         .get(`https://api.github.com/user/repos?visibility=public`)
         .headers({
@@ -52,6 +53,7 @@ export default function MainPage(){
         repHome.innerHTML = project.homepage !== null ? project.homepage : project.html_url;
     }
         return (
+
             <div className="container">
             <header>
                 <span>Rod Cordeiro</span>
